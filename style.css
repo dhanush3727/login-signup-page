@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b1b1b1;
+}
+/* Login Page Style */
+.container {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  background-color: #fef9ef;
+  justify-content: center;
+  box-shadow: 5px 5px 10px, 5px 5px 20px;
+  border-radius: 10px;
+}
+.login {
+  margin-top: 35px;
+}
+.login h1 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.login-form {
+  position: relative;
+}
+.login-form input {
+  margin-bottom: 30px;
+  height: 40px;
+  width: 230px;
+  padding-left: 15px;
+  outline: none;
+}
+.username {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  cursor: text;
+  color: gray;
+}
+.username-box:focus + label,
+.username-box:valid + label {
+  top: -20px;
+  left: 5px;
+  transition: 0.2s;
+}
+.password {
+  position: absolute;
+  left: 15px;
+  top: 80px;
+  cursor: text;
+  color: gray;
+}
+.show {
+  position: absolute;
+  right: 15px;
+  top: 82px;
+  cursor: pointer;
+}
+.pwd:focus + .password,
+.pwd:valid + .password {
+  top: 50px;
+  left: 5px;
+  transition: 0.2s;
+}
+.login-txt {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.login-txt a {
+  text-decoration: none;
+}
+.login-txt p span {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+.btn-link {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+}
+.btn {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border: 1px solid gray;
+  outline: none;
+  background-color: transparent;
+}
+.btn:hover {
+  border: 1px solid transparent;
+  background-color: #b1b1b1;
+}
