@@ -100,3 +100,102 @@ body {
   border: 1px solid transparent;
   background-color: #b1b1b1;
 }
+/* Signup Page Style */
+.signup {
+  margin-top: 15px;
+}
+.signup h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.signup-form {
+  margin: 20px;
+  position: relative;
+}
+.signup input {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  height: 30px;
+  width: 230px;
+  padding-left: 15px;
+  outline: none;
+}
+.name {
+  position: absolute;
+  left: 25px;
+  top: 5px;
+  cursor: text;
+  color: gray;
+}
+.name-box:focus + .name,
+.name-box:valid + .name {
+  top: -15px;
+  left: 15px;
+  transition: 0.2s;
+  font-size: 12px;
+}
+.user-name {
+  position: absolute;
+  left: 25px;
+  top: 55px;
+  cursor: text;
+  color: gray;
+}
+.user:focus + .user-name,
+.user:valid + .user-name {
+  font-size: 12px;
+  top: 35px;
+  left: 15px;
+  transition: 0.2s;
+}
+.email-name {
+  position: absolute;
+  left: 25px;
+  top: 105px;
+  cursor: text;
+  color: gray;
+}
+.email:focus + .email-name,
+.email:valid + .email-name {
+  top: 85px;
+  left: 15px;
+  transition: 0.2s;
+  font-size: 12px;
+}
+.user-pwd {
+  position: absolute;
+  left: 25px;
+  top: 155px;
+  cursor: text;
+  color: gray;
+}
+.pass:focus + .user-pwd,
+.pass:valid + .user-pwd {
+  top: 135px;
+  left: 15px;
+  font-size: 12px;
+  transition: 0.2s;
+}
+.show-img {
+  position: absolute;
+  right: 35px;
+  top: 158px;
+  cursor: pointer;
+}
+.signup-form .btn-link {
+  margin-bottom: 20px;
+}
+.signup-form .login-txt {
+  margin-bottom: 10px;
+}
+.front {
+  position: absolute;
+  z-index: 2;
+  transition: 2s ease;
+}
+.back {
+  position: absolute;
+  z-index: 1;
+  transition: 2s ease;
+  transform: rotateY(180deg);
+}
